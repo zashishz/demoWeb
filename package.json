@@ -1,0 +1,35 @@
+{
+  "name": "demowebsite",
+  "version": "1.0.0",
+  "description": "Website Building",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "normalize.css": "^7.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.0",
+    "gulp-watch": "^4.3.11",
+    "postcss-import": "^10.0.0",
+    "postcss-mixins": "^6.0.1",
+    "postcss-nested": "^2.0.2",
+    "postcss-simple-vars": "^4.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zashishz/demoWeb.git"
+  },
+  "author": "Ashish",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zashishz/demoWeb/issues"
+  },
+  "homepage": "https://github.com/zashishz/demoWeb#readme"
+}
