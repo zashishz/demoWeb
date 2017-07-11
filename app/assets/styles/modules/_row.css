@@ -6,6 +6,11 @@
         margin-bottom: 1rem;
     }
 
+    &--t-padding {
+            padding-top: 80px;
+        }
+
+
     @mixin atMedium {
 
         &__b-margin-until-medium {
@@ -39,6 +44,7 @@
     }
 
     @mixin atSmall {
+
         &__gutter {
         margin-right: -65px;
         }
@@ -47,12 +53,31 @@
             margin-right: -100px;
         }
 
+        &__gutter--small {
+            margin-right: -45px;
+        }
+
         &__gutter--large > div {
             padding-right: 100px;
         }
 
+        &__gutter--small > div {
+            padding-right: 45px;
+        }
+
         &__gutter>div {
             padding-right: 65px;
+        }
+    }
+
+    &--equal-at-medium {
+        @mixin atSmall {
+            display: flex;
+        }
+
+        & > div {
+            float: none;
+            display: flex;
         }
     }
 }

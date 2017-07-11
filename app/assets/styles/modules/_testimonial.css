@@ -1,6 +1,16 @@
 .testimonial {
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 0 1.18125rem 1rem 1.18125rem;
+    padding: 0 18px 1rem 18px;
+    margin-bottom: 98px;
+
+    @mixin atMedium {
+        padding: 0 1.18125rem 1rem 1.18125rem;
+        margin-bottom: 0;
+    }
+
+    &--last {
+        margin-bottom: 0;
+    }
 
     &__photo {
         height: 160px;

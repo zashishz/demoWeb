@@ -569,6 +569,16 @@ a {
         max-width: 976px;
     }
 
+.wrapper--no-padding-until-medium {
+        padding-left: 0;
+        padding-right: 0;
+
+        @atMedium {
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+    }
+
 .wrapper--b-margin {
         margin-bottom: 1rem;
     }
@@ -590,6 +600,17 @@ a {
     padding: 1.2rem 0;
 }
 
+.page-section--no-b-padding-until-medium {
+        padding-bottom: 0;
+    }
+
+@media (min-width: 800px) {
+
+.page-section--no-b-padding-until-medium {
+            padding: 4.5rem 0
+    }
+    }
+
 @media (min-width: 800px) {
 
 .page-section {
@@ -603,8 +624,15 @@ a {
     }
 
 .page-section--testimonial {
-        background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
-        background-size: cover;
+        background-color: #e0e6ef;
+    }
+
+@media (min-width: 530px) {
+
+.page-section--testimonial {
+            background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+            background-size: cover
+    }
     }
 
 .headline {
@@ -671,6 +699,10 @@ a {
         margin-bottom: 1rem;
     }
 
+.row--t-padding {
+            padding-top: 80px;
+        }
+
 @media (min-width: 800px) {
 
         .row__b-margin-until-medium {
@@ -704,6 +736,7 @@ a {
     }
 
 @media (min-width: 530px) {
+
         .row__gutter {
         margin-right: -65px;
         }
@@ -712,14 +745,38 @@ a {
             margin-right: -100px;
         }
 
+        .row__gutter--small {
+            margin-right: -45px;
+        }
+
         .row__gutter--large > div {
             padding-right: 100px;
+        }
+
+        .row__gutter--small > div {
+            padding-right: 45px;
         }
 
         .row__gutter>div {
             padding-right: 65px;
         }
     }
+
+@media (min-width: 530px) {
+
+.row--equal-at-medium {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex
+    }
+    }
+
+.row--equal-at-medium > div {
+            float: none;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
 
 .generic-content-container p {
         line-height: 1.65;
@@ -823,8 +880,21 @@ a {
 
 .testimonial {
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 0 1.18125rem 1rem 1.18125rem;
+    padding: 0 18px 1rem 18px;
+    margin-bottom: 98px;
 }
+
+@media (min-width: 800px) {
+
+.testimonial {
+        padding: 0 1.18125rem 1rem 1.18125rem;
+        margin-bottom: 0
+}
+    }
+
+.testimonial--last {
+        margin-bottom: 0;
+    }
 
 .testimonial__photo {
         height: 160px;
